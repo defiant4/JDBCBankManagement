@@ -12,7 +12,7 @@ public class ConnectionDAO
 		{
 
 	Class.forName("oracle.jdbc.driver.OracleDriver");
-	con=DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE","system","project");
+	con=DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:XE","{username}","{project}");
 	
 		}
 		catch(ClassNotFoundException es)
